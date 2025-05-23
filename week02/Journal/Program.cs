@@ -11,7 +11,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("\nJournal Menu:");
+            Console.WriteLine("\n Please select one of the following Journal Menu:");
             Console.WriteLine("1. Write a new entry");
             Console.WriteLine("2. Display the journal");
             Console.WriteLine("3. Save the journal to a file");
