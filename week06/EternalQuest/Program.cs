@@ -2,6 +2,10 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("This is the Eternal Quest program!\n");
+
+        Console.WriteLine("You currently have 0 points! Let's get started!");
+
         GoalManager manager = new GoalManager();
         bool running = true;
 
@@ -14,7 +18,7 @@ class Program
             Console.WriteLine("4. Show Score");
             Console.WriteLine("5. Save Goals");
             Console.WriteLine("6. Load Goals");
-            Console.WriteLine("7. Quit");
+            Console.WriteLine("7. Quit\n");
             Console.Write("Choose an option: ");
             string input = Console.ReadLine();
 
@@ -59,11 +63,11 @@ class Program
         Console.Write("Choose type: ");
         string type = Console.ReadLine();
 
-        Console.Write("Name: ");
+        Console.Write("What is the name of your goal?: ");
         string name = Console.ReadLine();
-        Console.Write("Description: ");
+        Console.Write("Give a Description: ");
         string desc = Console.ReadLine();
-        Console.Write("Points: ");
+        Console.Write("What is the amount of points assigned?: ");
         int points = int.Parse(Console.ReadLine());
 
         switch (type)
